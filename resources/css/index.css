@@ -4,19 +4,17 @@ html {
 
 body {
      margin: 0 auto;
-     height: 300rem;
+     height: 250rem;
      width: 100%;
      display: grid;
      grid-template-columns: repeat(5, 1fr);
-     grid-template-rows: repeat(20, 1fr);
-     gap: 0.625rem;
+     grid-template-rows: repeat(4, 1fr);
      background-color: gray;
 }
 
 /* Navigation -------------------------------------------------- */
 
 header {
-    background-color: burlywood;
     border-bottom: .0625rem solid black;
     width: 100%;
     height: 5rem;
@@ -54,11 +52,11 @@ nav a {
 /* Intro ------------------------------------------- */
 
 .intro {
-    background-color: aqua;
+    background-color: brown;
     grid-column: 1 / 6;
-    grid-row: 1 / 5;
+    grid-row: 1 / 2;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -80,13 +78,12 @@ nav a {
 #about{
     background-color: blueviolet;
     grid-column: 1 / 6;
-    grid-row: 5 / 11;
+    grid-row: 2 / 3;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 23rem;
+    align-items: center;
 }
 
 #about img {
@@ -98,7 +95,6 @@ nav a {
 .about {
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
 }
 
 .about-text {
@@ -111,24 +107,43 @@ nav a {
 
 /* Projects ------------------------------------ */
 
-.projects {
-    background-color: cadetblue;
-    grid-column: 1 / 6;
-    grid-row: 11 / 16;
-}
-
-/* Languages ----------------------------------- */
-
-.languages{
-    background-color: bisque;
-    grid-column: 1 / 6;
-    grid-row: 16 / 20;
-}
-
-footer {
+#projects {
     background-color: aquamarine;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 20;
-    grid-row-end: 21;
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    width: 70%;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.project-description {
+    text-align: center;
+    width: 100%;
+}
+
+.project-photo {
+    height: 100%;
+    width: 20rem;
+}
+
+.project-link {
+    height: 3rem;
+    width: 3rem;
+}
+
+#contact {
+    background-color: antiquewhite;
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
