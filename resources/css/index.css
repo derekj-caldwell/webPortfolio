@@ -3,6 +3,7 @@ html {
 }
 
 body {
+     margin: 0 auto;
      height: 80rem;
      width: 100%;
      display: grid;
@@ -15,23 +16,33 @@ body {
 header {
     background-color: burlywood;
     border-bottom: .0625rem solid black;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    width: 100%;
+    height: 7.5rem;
+    top: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
 }
 
 nav {
     margin-right: 1.5rem;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
 nav li {
     display: inline;
     font-size: 1.5rem;
     margin-left: 1rem;
+}
+
+li img {
+    height: 3.75rem;
+    width: 3.75rem;
 }
 
 section {
@@ -55,16 +66,16 @@ section li {
     display: inline;
 }
 
+section img {
+    height: 20rem;
+    width: 20rem;
+}
+
 div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-img {
-    height: 20rem;
-    width: 20rem;
 }
 
 footer {
